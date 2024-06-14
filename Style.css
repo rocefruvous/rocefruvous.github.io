@@ -1,0 +1,167 @@
+:root {
+    --background: #0d0f18;
+    --second-background: #0b0d16;
+    --button-background: rgba(134, 170, 236, 0.15);
+    --fore: #a5b6cf;
+    --accent: #86aaec;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    font-family: "VC Honey Deck", sans-serif;
+    margin: 0;
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+}
+body {
+    background: var(--background);
+    color: var(--fore);
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--accent);
+    background: var(--button-background);
+}
+  
+::selection {
+    color: var(--accent);
+    background: var(--button-background);
+}
+.mainFrame {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pfp {
+    border-radius: 20px;
+    padding: 5px;
+    height: 144px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--button-background);
+}
+.firstAbout {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.about h2 {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.mainInfo {
+    margin-left: 20px;
+    justify-content: space-between;
+    display: grid;
+}
+.mainInfo h1 {
+    margin-bottom: 5px;
+}
+.mainInfo a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: var(--accent);
+}
+.accent {
+    color: var(--accent);
+}
+.info {
+    margin-top: 16px;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.socialLink:hover {
+    transition: 0.2s;
+    color: var(--accent);
+}
+.socialLink a {
+    transition: 0.2s;
+    font-family: "Inter", sans-serif;
+    color: var(--fore);
+    background-color: var(--second-background);
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 6px;
+}
+.socialLink h3 {
+    transition: 0.2s;
+    margin-right: 5px;
+    min-width: 5rem;
+    color: var(--fore);
+}
+.socialLink:hover h3 {
+    color: var(--accent);
+}
+.socialLink:hover a {
+    color: var(--accent);
+    background-color: var(--button-background);
+    box-shadow: 0 0 8px 0 var(--button-background);
+}
+.social-frame {
+    padding: 0;
+}
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 100%;
+}
+.socialLink .fa-brands {
+    width: 28.4px;
+    font-size: 17px;
+    text-align: center;
+}
+.languages {
+    display: flex;
+    gap: 8px;
+}
+.languages img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.webring {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+.webring-image {
+    image-rendering: pixelated;
+    margin: 4px;
+}
+.friend-link img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 2px solid var(--fore);
+    transition: 0.3s;
+}
+.friend-link:hover img {
+    border: 2px solid var(--accent);
+    box-shadow: 0 8px 15px var(--button-background);
+}
+#star {
+    position: absolute;
+    left: 49.85%;
+}
+.footer {
+    background: var(--second-background);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
