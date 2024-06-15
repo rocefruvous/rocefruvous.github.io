@@ -1,7 +1,7 @@
 # Personal Website
 <p>
 very scaru repository for my very basic person website
-<br> this website is hosted on github pages and can be accessed</p> [here](https://kotlico.github.io/)
+<br> this website is hosted on github pages and can be accessed <a href="https://kotlico.github.io/">here</a>
 </p>
 
 ## Features
