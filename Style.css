@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'VC Honey';
+    src: 
+        url('./assets/font/VCHoney/VCHoney-Regular.woff2') format('woff2'),
+        url('./assets/font/VCHoney/VCHoney-Regular.woff') format('woff'),
+        url('./assets/font/VCHoney/VCHoney-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --background: #0d0f18;
     --second-background: #0b0d16;
@@ -7,7 +17,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
-    font-family: "VC Honey Deck", sans-serif;
+    font-family: 'VC Honey', Fallback, sans-serif;
     margin: 0;
 }
 p {
