@@ -149,6 +149,9 @@ body {
     gap: 8px;
     justify-content: center;
 }
+.webring a {
+    text-decoration: none;
+}
 .webring-image {
     image-rendering: pixelated;
     margin: 4px;
