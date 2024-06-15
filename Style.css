@@ -137,6 +137,7 @@ body {
 .languages {
     display: flex;
     gap: 8px;
+    justify-content: center;
 }
 .languages img {
     height: 64px;
@@ -171,10 +172,11 @@ body {
     position: absolute;
     left: 49.85%;
 }
-.footer {
+footer {
     background: var(--second-background);
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
     padding: 6px;
 }
