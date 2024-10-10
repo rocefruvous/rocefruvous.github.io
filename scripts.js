@@ -9,15 +9,6 @@ $(document).ready(function(){
 
     var timeInterval = 400; /** interval between each titles **/
 
-    getTime();
-    async function getTime() {
-    const response = await fetch(
-        'https://worldtimeapi.org/api/timezone/Europe/Kyiv'
-    );
-    const data = await response.json();
-    document.getElementById("timezone").innerHTML = data.abbreviation + data.utc_offset;
-    };
-
     exec();
 
     setInterval(function(){
