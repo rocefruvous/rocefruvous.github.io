@@ -12,10 +12,10 @@ $(document).ready(function(){
     getTime();
     async function getTime() {
     const response = await fetch(
-        'http://worldtimeapi.org/api/timezone/Europe/Kyiv'
+        'https://worldtimeapi.org/api/timezone/Europe/Kyiv'
     );
     const data = await response.json();
-    document.getElementById("timezone").innerHTML = "GMT " + data.utc_offset;
+    document.getElementById("timezone").innerHTML = data.abbreviation + data.utc_offset;
     };
 
     exec();
