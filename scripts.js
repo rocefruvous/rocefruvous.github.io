@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     var titles = ['kotlico ⎻⎼⎽⎼⎻','kotlico ⎼⎻⎼⎽⎼','kotlico ⎽⎼⎻⎼⎽','kotlico ⎼⎽⎼⎻⎼',];
 
-    var timeInterval = 300; /** interval between each titles **/
+    var timeInterval = 400; /** interval between each titles **/
 
     getTime();
     async function getTime() {

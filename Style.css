@@ -31,7 +31,7 @@ body {
     color: var(--fore);
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
     color: var(--accent);
     background: var(--button-background);
 }
@@ -50,6 +50,7 @@ body {
     border-radius: 20px;
     padding: 5px;
     height: 144px;
+    width: 144px;
     border-style: solid;
     border-width: 3px;
     border-color: var(--button-background);
