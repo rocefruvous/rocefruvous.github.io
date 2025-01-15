@@ -5,7 +5,8 @@
 $(document).ready(function(){
 
 
-    var titles = ['kotlico ⎻⎼⎽⎼⎻','kotlico ⎼⎻⎼⎽⎼','kotlico ⎽⎼⎻⎼⎽','kotlico ⎼⎽⎼⎻⎼',];
+    var waves = ['⎻⎼⎽⎼⎻','⎼⎻⎼⎽⎼','⎽⎼⎻⎼⎽','⎼⎽⎼⎻⎼',];
+    var title = "roce ";
 
     var timeInterval = 400; /** interval between each titles **/
 
@@ -13,14 +14,19 @@ $(document).ready(function(){
 
     setInterval(function(){
         exec();
-    }, timeInterval * titles.length);
+    }, 
+    
+    timeInterval * waves.length);
 
     function exec(){
-        $.each(titles, function(k, v){
-            setTimeout(function(){
-                $('title').html(v);
-            }, timeInterval * (k + 1));
-        });
-    }
+        $.each(waves, function(i, string){
 
+            setTimeout(function(){
+                $('title').html(title + string);
+            }, 
+
+            timeInterval * (i + 1));
+        }
+    );
+    }
 });
