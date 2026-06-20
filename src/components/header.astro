@@ -1,18 +1,12 @@
----
-
-const { title = "my site" } = Astro.props;
-
----
-
 <header class="header">
     <nav class="flex flex-row justify-between">
         <div>
-            <ul class="header__list flex flex-row gap-2.5">
+            <ul class="header__list font-medium flex flex-row gap-2.5">
                 <li>
-                    <a href="/" >Home</a>
+                    <a class="header__button" href="/" >Home</a>
                 </li>
                 <li>
-                    <a href="about" >About</a>
+                    <a class="header__button" href="about" >About</a>
                 </li>
             </ul>
 
@@ -25,17 +19,16 @@ const { title = "my site" } = Astro.props;
 </header>
 
 <style>
-.header {
-    max-width: 650px;
-    width: 100%;
-}
-.header__list {
-    font-weight: 600;
-    font-size: 1.3em;
-}
-.header__profile-picture {
-    width: 6em;
-    height: 6em;
-    border-radius: 1rem;
-}
+    .header {
+        max-width: 650px;
+        width: 100%;
+    }
+    .header__list {
+        color: var(--foreground-secondary);
+    }
+    .header__profile-picture {
+        width: 6em;
+        height: 6em;
+        border-radius: 1rem;
+    }
 </style>
