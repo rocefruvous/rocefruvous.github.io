@@ -4,8 +4,14 @@ body {
   font-family:
     "Satoshi", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
   background-color: var(--background);
   color: var(--foreground);
+}
+
+.section {
+  max-width: 610px;
+  width: 100%;
 }
 
 mark {
@@ -15,4 +21,8 @@ mark {
 
 .primary-text {
   color: var(--primary);
+}
+
+.title {
+  font-size: 1.3em;
 }
