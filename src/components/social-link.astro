@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { icon, label, href, username } = Astro.props;
+---
+
+<a href={href} target="_blank" rel="noreferrer" class="flex items-center gap-3">
+    <Icon size={20} name={icon} />
+
+    <div>
+        <p>{label}</p>
+        <span class="primary-text">{username}</span>
+    </div>
+</a>

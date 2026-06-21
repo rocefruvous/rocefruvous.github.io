@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import SocialLink from "../components/social-link.astro";
 ---
 
 <Layout title="My name is <mark>peter</mark>">
@@ -13,5 +15,51 @@ import Layout from "../layouts/Layout.astro";
       i code when i feel like it, 
       which is rare i'd say (too layzuh and rotting)
     </p>
+
+    <br>
+    <h2 class="title">Socials & Contacts</h2>
+    <div class="grid grid-cols-2 p-2">
+      <SocialLink
+        icon="mingcute:twitter-fill"
+        label="twitter"
+        href="https://x.com/rocefruvous"
+        username="@rocefruvous"
+      /> 
+
+      <SocialLink
+        icon="mingcute:bluesky-social-fill"
+        label="bluesky"
+        href="https://bsky.app/profile/rocefruvous.bsky.social"
+        username="@rocefruvous"
+      /> 
+
+      <SocialLink
+        icon="mingcute:github-fill"
+        label="github"
+        href="https://github.com/rocefruvous"
+        username="rocefruvous"
+      /> 
+
+      <SocialLink
+        icon="mingcute:steam-fill"
+        label="steam"
+        href="https://steamcommunity.com/id/rocefruvous/"
+        username="rocefruvous"
+      /> 
+
+      <SocialLink
+        icon="mingcute:discord-fill"
+        label="discord"
+        href="https://discord.com/users/713004137385820170/"
+        username="rocefruvous"
+      /> 
+
+      <SocialLink
+        icon="mingcute:spotify-fill"
+        label="spotify"
+        href="https://open.spotify.com/user/2dn8s02181vgnr3rgwxrpqezy"
+        username="rocefruvous"
+      /> 
+    </div>
   </div>
 </Layout>
