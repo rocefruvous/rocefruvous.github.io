@@ -1,3 +1,7 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <header class="header">
     <nav class="flex flex-row justify-between">
         <div>
@@ -8,6 +12,14 @@
                 <li>
                     <a class="header__button" href="about" >About</a>
                 </li>
+
+                <button id="theme-light">
+	                <Icon size={20} name="mingcute:sun-fill" />
+                </button>
+
+                <button id="theme-dark">
+	                <Icon size={20} name="mingcute:moon-fill" />
+                </button>
             </ul>
 
             <slot />
@@ -17,6 +29,18 @@
         <img class="header__profile-picture" alt="avatar" src="https://github.com/rocefruvous.png?size=256">
     </nav>
 </header>
+
+<script>
+	document.getElementById("theme-light")?.addEventListener("click", () => {
+		document.documentElement.dataset.theme = "light";
+		localStorage.setItem("theme", "light");
+	});
+
+	document.getElementById("theme-dark")?.addEventListener("click", () => {
+		document.documentElement.dataset.theme = "dark";
+		localStorage.setItem("theme", "dark");
+	});
+</script>
 
 <style>
     .header {

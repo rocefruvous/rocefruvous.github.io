@@ -5,3 +5,11 @@
   --foreground: #333;
   --foreground-secondary: #999;
 }
+
+[data-theme="dark"] {
+  --background: #010d0d;
+  --surface: #161616;
+  --primary: #0f7c64;
+  --foreground: #ccc;
+  --foreground-secondary: #666;
+}
