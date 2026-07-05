@@ -5,7 +5,7 @@ import Footer from "../components/footer.astro";
 import "../styles/global.css";
 import "../styles/variable.css";
 
-import { ICON } from "../scripts/constants";
+import { ICON, AUTHOR, TITLE, DESCRIPTION, THEME_COLOR } from "../scripts/constants";
 const { title } = Astro.props;
 ---
 
@@ -14,9 +14,22 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href={ ICON } />
+		<link rel="icon" href={ICON} />
 		<meta name="generator" content={Astro.generator} />
-		<title>roce</title>
+
+		<meta name="description" content={DESCRIPTION} />
+        <meta name="author" content={AUTHOR} />
+        <meta name="theme-color" content={THEME_COLOR} />
+
+		<meta property="og:title" content={TITLE} />
+		<meta property="og:description" content={DESCRIPTION} />
+		<meta property="og:image" content={ICON} />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:site_name" content={AUTHOR} />
+		<meta property="og:type" content="website" />
+
+
+		<title set:text={ TITLE } />
 
 		<script is:inline>
 			const theme = localStorage.getItem("theme") || "light";
@@ -35,7 +48,7 @@ const { title } = Astro.props;
 
 		<div class="flex flex-col p-3 justify-center items-center">
 			<Header>
-				<h2 class="py-2 text-2xl font-extrabold" set:html={ title } />
+				<h1 class="py-2 text-2xl font-extrabold" set:html={ title } />
 			</Header>
 
 			<slot />
