@@ -14,11 +14,11 @@ import { ICON } from "../scripts/constants";
                     <a class="header__button" href="/about/" >About</a>
                 </li>
 
-                <button class="header__button" id="theme-light">
+                <button class="header__button" id="theme-light" aria-label="Switch to light mode">
 	                <Icon size={20} name="mingcute:sun-fill" />
                 </button>
 
-                <button class="header__button" id="theme-dark">
+                <button class="header__button" id="theme-dark" aria-label="Switch to dark mode">
 	                <Icon size={20} name="mingcute:moon-fill" />
                 </button>
             </ul>
@@ -58,6 +58,7 @@ import { ICON } from "../scripts/constants";
     }
     .header__button {
         transition: 200ms;
+        cursor: pointer;
     }
     .header__button:hover {
         color: var(--foreground);
